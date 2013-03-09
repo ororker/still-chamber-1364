@@ -1,0 +1,18 @@
+   72  cd Documents/workspace
+   73  cd onhisbike/
+   74  heroku create
+   75  java -version
+   76  mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
+   77  git init
+   78  git add .
+   79  git commit -m "Basic Maven WebApp"
+   80  git push heroku master
+   81  git remote -v
+   82  heroku git:remote -a still-chamber-1364
+   83  git remote -v
+   84  git push heroku master
+   85  heroku git:remote -a git@heroku.com:still-chamber-1364.git
+   86  ssh-keygen -t rsa
+   87  heroku keys:add
+   88  git push heroku master
+   89  history > history.txt
